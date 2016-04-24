@@ -23,10 +23,10 @@ def writingTxt(filename,strArr):
 
 # In[2]:
 def getKey():
-    token="2373074766-PL14cizo2IrNPcvcUI25kdi7KjZQMAdRnNx2SPN"
-    token_key="VKTOHImjOvE4Kp8ECj3T11zzorHuwxUImNnfWGuuVIaK9"
-    con_secret="NIM6wPYiI2S4rCRkAPZUpaCpa"
-    con_secret_key="R8a6YSb4yf77X27emnGcI9hKdYYAEDbSqK08ocg6s5Vz9yLnr6"
+    token=""
+    token_key=""
+    con_secret=""
+    con_secret_key=""
     
     return token,token_key,con_secret,con_secret_key
     
