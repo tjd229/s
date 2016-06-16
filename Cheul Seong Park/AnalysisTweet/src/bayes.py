@@ -237,12 +237,16 @@ def classifyArrNB(strArr,vocabList,p0V,p1V,p1):
         for s in arr:
             buff+=s
         docList.append(textParse2(buff))
-    
+    preds=[]
     for ix in range(len(docList)):
         wordVector = bagOfWords2VecMN(vocabList,docList[ix])
-        print "\nNo.%d tweet has been classified as %d"%(ix,classifyNB(array(wordVector),p0V,p1V,p1))
+        ans=classifyNB(array(wordVector),p0V,p1V,p1)
+        preds.append(ans)
+        print "\nNo.%d tweet has been classified as %d"%(ix,ans)
         print strArr[ix]['text']+"\n"
         
+   
+    return preds    
     
 def tweetTest():
     docList=[]; classList = []; fullText =[]
